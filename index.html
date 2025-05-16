@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=backspace"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="title">Calculator</h1>
+
+      <div class="calculator-section">
+        <div class="dark-light-mode">
+          <span class="material-symbols-outlined" onclick="ToggleEvent()">
+            dark_mode
+          </span>
+        </div>
+        <div class="display-section">
+          <h1 id="read-section">vsdvsdvds</h1>
+          <p id="answer-section">fsdsdsd</p>
+        </div>
+        <div class="arithmetic-section">
+          <div class="arithmetic-first-row">
+            <button>Clear</button>
+            <button>%</button>
+            <button>/</button>
+          </div>
+          <div class="arithmetic-remaining-row">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button>.</button>
+            <button>0</button>
+            <button>
+              <span class="material-symbols-outlined"> backspace </span>
+            </button>
+            <button>=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

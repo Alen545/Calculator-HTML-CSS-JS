@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-    />
-  </head>
-  <body>
-    <div class="main-container">
-      <h1 class="title">Calculator</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+  <main class="calculator-container">
+    <h1 class="calculator-title">Simple Calculator</h1>
 
-      <div class="calculator-section">
-        <div class="dark-light-mode">
-          <span class="material-symbols-outlined" onclick="ToggleEvent()"
-            >dark_mode</span
-          >
+    <section class="calculator">
+      <div class="theme-toggle" onclick="ToggleEvent()">
+        <span class="material-symbols-outlined">dark_mode</span>
+      </div>
+
+      <div class="calculator-display">
+        <div id="read-section" class="expression"></div>
+        <div id="answer-section" class="result"></div>
+      </div>
+
+      <div class="calculator-buttons">
+        <div class="top-row">
+          <button data-value="Clear" class="wide-btn">Clear</button>
+          <button data-value="%">%</button>
+          <button data-value="/">/</button>
         </div>
-
-        <div class="display-section">
-          <h1 id="read-section"></h1>
-          <p id="answer-section"></p>
-        </div>
-
-        <div class="arithmetic-section">
-          <div class="arithmetic-first-row">
-            <button data-value="Clear" id="clr-btn">Clear</button>
-            <button data-value="%">%</button>
-            <button data-value="/">/</button>
-          </div>
-          <div class="arithmetic-remaining-row">
-            <button data-value="7">7</button>
-            <button data-value="8">8</button>
-            <button data-value="9">9</button>
-            <button data-value="*">*</button>
-            <button data-value="4">4</button>
-            <button data-value="5">5</button>
-            <button data-value="6">6</button>
-            <button data-value="-">-</button>
-            <button data-value="1">1</button>
-            <button data-value="2">2</button>
-            <button data-value="3">3</button>
-            <button data-value="+">+</button>
-            <button data-value=".">.</button>
-            <button data-value="0">0</button>
-            <button data-value="backspace">
-              <span class="material-symbols-outlined"> backspace </span>
-            </button>
-            <button data-value="=">=</button>
-          </div>
+        <div class="number-grid">
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+          <button data-value="9">9</button>
+          <button data-value="*">*</button>
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+          <button data-value="-">-</button>
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+          <button data-value="+">+</button>
+          <button data-value=".">.</button>
+          <button data-value="0">0</button>
+          <button data-value="backspace">
+            <span class="material-symbols-outlined">backspace</span>
+          </button>
+          <button data-value="=">=</button>
         </div>
       </div>
-    </div>
-  </body>
+    </section>
+  </main>
+</body>
 </html>
